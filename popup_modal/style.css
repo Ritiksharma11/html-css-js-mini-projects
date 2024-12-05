@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.popupBox {
+    position: absolute;
+    background-color: white;
+    width: 80vw;
+    max-width: 60rem;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+    transform: translateY(-250%);
+    transition: 0.5s ease-in-out;
+    /* display: none; */
+}
+
+.popupBox.display {
+    transform: translateY(0%);
+}
+
+.button {
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+}
